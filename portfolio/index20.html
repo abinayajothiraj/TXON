@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <title> Abinaya portfolio</title>
+    <link rel="stylesheet" href="style4.css" >    
+    <script src="https://kit.fontawesome.com/eb1d3d651d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>  <h2 class="logo"><span>A</span>binaya</h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    <div class="header-text">
+        
+        <h1> Hi, I'm <span>Abinaya.J </span></h1>
+        <p>Web Developer</p>
+    </div>
+</div></div>
+<!--------About Me--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="portfolio.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Web developer. I can provide clean code and pixel perfect
+                    design. I also make the website more & more interactive with web 
+                    animations.I can provide clean code and pixel perfect design and responsive websites.
+                </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li>C Programming</li>
+                <li><span>Machine Learning</span><br></li>
+                <li>Full stack Development</li>
+                <li><span>App Development</span><br></li>
+
+            </ul></div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017 - 2018</span><br>SSLC at Padma Sarangapani Schools, Chennai.</li>
+                        <li><span>2018 - 2020</span><br>HSC at Padma Sarangapani Schools,Chennai.</li>
+                        <li><span>2020 - 2024</span><br>B.Tech-IT at ACT,Chennai.</li>
+                    </ul></div>
+        </div>
+    </div>
+</div>
+</div>
+<!----------services--------------->
+<div id="services">
+    <div class="container">
+    <h1 class="sub-title"> My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design & Development</h2>
+            <p>Web design is the process of planning, conceptualizing, and arranging content online.
+              Today, designing a website goes beyond aesthetics to include the website's overall functionality. </p>
+              <a href="#">learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Application Development</h2>
+            <p>Application development is the process of gathering business requirements, designing,
+               prototyping, coding, testing and ongoing improvements and debugging of software.</p>
+              <a href="#">learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<!--------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abinaya2260@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 6379471571</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            
+                <a href="resume.jpeg" download class="btn btn2">Download CV</a>
+                </div>
+                   <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy;  Abinaya 2022.  All right reserved</p>
+    </div>
+
+</div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
