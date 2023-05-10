@@ -1,0 +1,22 @@
+.content h1{
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorchange{
+    0%{
+        color:rgb(122, 235, 225);
+    }
+
+    25%{
+        color:yellowgreen;
+    }
+    50%{
+        color: rgb(241, 30, 213);
+    }
+    100%{
+        color:rgb(221, 19, 63);
+    }
+}
